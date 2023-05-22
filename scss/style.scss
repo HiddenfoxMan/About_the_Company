@@ -1,0 +1,89 @@
+//Начало блока: О компании в цифрах.
+.about {
+
+    &__body {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        font-family: sans-serif;
+        background-image: url('/img/About_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        background: linear-gradient(rgba(0, 162, 255, 0.575), transparent);
+    }
+    &__header {
+        h2 {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 50px;
+        }
+    }
+
+    &__description {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    &__title {
+        color: #0075B8;
+        font-size: 18px;
+    }
+
+    &__years {
+    }
+
+    &__number {
+    }
+
+    &__span {
+    }
+
+    &__square {
+    }
+
+    &__square-number {
+    }
+
+    &__fences {
+    }
+
+    &__fences-number {
+    }
+
+    &__projects {
+    }
+
+    &__projects-number {
+    }
+}
+.item-years {
+
+    &__number {
+    }
+}
+.item-square {
+
+    &__number {
+    }
+}
+.item-fences {
+
+    &__number {
+    }
+}
+.item-projects {
+
+    &__number {
+    }
+}

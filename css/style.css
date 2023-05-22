@@ -1,0 +1,33 @@
+.about__body {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+  background-image: url("/img/About_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about__container {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  background: linear-gradient(rgba(0, 162, 255, 0.575), transparent);
+}
+.about__header h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 50px;
+}
+.about__description {
+  color: #ffffff;
+  font-size: 18px;
+}
+.about__title {
+  color: #0075B8;
+  font-size: 18px;
+}

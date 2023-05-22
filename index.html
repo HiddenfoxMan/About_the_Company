@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="about__body">
+        <div class="about__container">
+            <div class="about__header">
+                <h2>ООО &laquo;ПК Металлоконструкции&raquo;</h2>
+            </div>
+            <div class="about__description">
+                <p>Компания на рынке с 2013 года. За это время мы успели себя зарекомендовать как надежный производитель качественной продукции. Компания производит и реализует ограждения из сварной оцинкованной сетки с полимерным покрытием. Данный вид ограждения является одним из самых востребованных на сегодняшнем рынке: соответствует ГОСТ 2016, требованиям Росгвардии, ПП РФ 1006. Наше технологическое оснащение соответствует самым высоким современным стандартам</p>
+            </div>
+            <div class="about__title">
+                <h6>О компании в цифрах</h6>
+                
+            </div>
+            <div class="about__years">
+                <div class="about__number">
+                    <span class="item-years__number">10</span>
+                </div>
+                <div class="about__span">
+                    <span>Лет надежной работы</span>
+                </div>
+            </div>
+            <div class="about__square">
+                <div class="about__square-number">
+                    <span class="item-square__number">1500 м<sup>2</sup></span>
+                </div>
+                <div class="about__span">
+                    <span>Площадь производства</span>
+                </div>
+            </div>
+            <div class="about__fences">
+                <div class="about__fences-number">
+                    <span class="item-fences__number">1 056 000 м<sup>2</sup></span>
+                </div>
+                <div class="about__span">
+                    <span>Ограждений Установлено</span>
+                </div>
+            </div>
+            <div class="about__projects">
+                <div class="about__projects-number">
+                    <span class="item-projects__number">2 567</span>
+                </div>
+                <div class="about__span">
+                    <span>Проектов выполнено</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> 
+        $(function() {
+            var target_block = $(".price"); // Ищем блок 
+            var blockStatus = true;
+            $(window).scroll(function() {
+                var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+                if(scrollEvent && blockStatus) {
+                    blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+                    $({numberValue: 0}).animate({numberValue: 10}, {
+                        duration: 1500, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
+                        easing: "linear",
+                        step: function(val) {
+                            $(".price").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
